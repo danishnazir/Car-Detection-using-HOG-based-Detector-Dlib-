@@ -8,8 +8,9 @@ from skimage import io
 #load car detector
 detector = dlib.fhog_object_detector("car_detector.svm")
 win = dlib.image_window()
-#load video and process frame by frame
-cap = cv2.VideoCapture('DSC_0004.MOV')
+#give path of video on which you want it to run and process frame by frame
+
+cap = cv2.VideoCapture('')
 while(True):
 #     # Capture frame-by-frame
      ret, frame = cap.read()
