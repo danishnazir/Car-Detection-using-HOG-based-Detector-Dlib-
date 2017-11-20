@@ -13,6 +13,7 @@ cap = cv2.VideoCapture('DSC_0004.MOV')
 while(True):
 #     # Capture frame-by-frame
      ret, frame = cap.read()
+     #process in BGR2RGB for more detections
      frame = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
 
      dets = detector(frame)
