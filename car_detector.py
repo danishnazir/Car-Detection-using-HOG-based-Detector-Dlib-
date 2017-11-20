@@ -9,7 +9,8 @@ from skimage import io
 detector = dlib.fhog_object_detector("car_detector.svm")
 win = dlib.image_window()
 #give path of video on which you want it to run and process frame by frame
-
+#if you want to use my video then download that from here 
+#https://drive.google.com/file/d/19iE0RuCi9uVm_xLjOuG7fYkRfLktYDis/view?usp=sharing
 cap = cv2.VideoCapture('')
 while(True):
 #     # Capture frame-by-frame
